@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
@@ -16,7 +16,7 @@
 
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
@@ -44,140 +44,53 @@
 
   <body>
     <!-- ======= Mobile nav toggle button ======= -->
-    <!--nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container-fluid">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-mdb-toggle="collapse"
-          data-mdb-target="#navbarCentered"
-          aria-controls="navbarCentered"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i class="fas fa-bars"></i>
+
+        <!-- Brand (optional) -->
+        <a class="navbar-brand" href="#hero"></a>
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarMain"
+                aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div
-          class="collapse navbar-collapse justify-content-center"
-          id="navbarCentered">
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <li>
-              <a href="#hero" class="nav-link scrollto active">
-                <i class="bx bx-home"></i> 
-                <span>Start</span>
-              </a>
-            </li>
-            <li>
-              <a href="#resume" class="nav-link scrollto">
-                <span>Resume</span>
-              </a>
-            </li>
-            <li>
-              <a href="#arts" class="nav-link scrollto">
-                <span>Arts</span>
-              </a>
-            </li>
-            <li>
-              <a href="#services" class="nav-link scrollto">
-                <span>Services</span></a>
-            </li>
-            <li>
-              <a href="#contact" class="nav-link scrollto">
-                <span>Contact</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav-->
-    
-    <nav nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="container-fluid"> 
-        <button type="button" class="navbar-toggler" 
-          data-bs-toggle="collapse" 
-          data-bs-target="#navbarCentered">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-center"
-          id="navbarCentered">
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <li>
-              <a href="https://www.xing.com/profile/Radmir_Gesler2/cv?sc_o=navigation_header&sc_o_PropActionOrigin=navigation_badge_no_badge" class="nav-link scrollto">
+        <!-- EINE gemeinsame Collapse -->
+        <div class="collapse navbar-collapse" id="navbarMain">
+
+          <!-- Left: Social -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="https://www.xing.com/profile/Radmir_Gesler2/cv?sc_o=navigation_header&sc_o_PropActionOrigin=navigation_badge_no_badge"
+                 class="nav-link scrollto" target="_blank" rel="noopener">
                 <i class="bx bxl-xing"></i>
               </a>
             </li>
-            <li>
-              <a href="https://www.linkedin.com/in/radmir-gesler-0848a413a/" class="nav-link scrollto">
+            <li class="nav-item">
+              <a href="https://www.linkedin.com/in/radmir-gesler-0848a413a/"
+                 class="nav-link scrollto" target="_blank" rel="noopener">
                 <i class="bx bxl-linkedin"></i>
               </a>
             </li>
           </ul>
-        </div>
-        <div
-          class="collapse navbar-collapse justify-content-center"
-          id="navbarCentered">
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <li>
-              <a href="#hero" class="nav-link scrollto active">
-                <i class="bx bx-home"></i> 
-                <span>Start</span>
-              </a>
-            </li>
-            <li>
-              <a href="#resume" class="nav-link scrollto">
-                <span>Resume</span>
-              </a>
-            </li>
-            <li>
-              <a href="#arts" class="nav-link scrollto">
-                <span>Arts</span></a>
-            </li>
-            <li>
-              <a href="#music" class="nav-link scrollto">
-                <span>Music</span></a>
-            </li>
-            <li>
-              <a href="#projects" class="nav-link scrollto">
-                <span>Projects</span>
-              </a>
-            </li>
-            <li>
-              <a href="#contact" class="nav-link scrollto">
-                <span>Contact</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>        
-    </nav>
-    
-    <!-- End Header -->
 
-    <!-- ======= Header ======= -->
-    <!--header id="header">
-    <div class="d-flex flex-column">
-        <div class="profile">
-          <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-          <h1 class="text-light"><a href="index.html">Radmir Gesler</a></h1>
-          <div class="social-links mt-3 text-center">
-            <a href="https://www.xing.com/profile/Radmir_Gesler2/cv?sc_o=navigation_header&sc_o_PropActionOrigin=navigation_badge_no_badge" class="google-plus"><i class="bx bxl-xing"></i></a>
-            <a href="https://www.linkedin.com/in/radmir-gesler-0848a413a/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-          </div>
-        </div>
-  
-        <nav id="navbar" class="nav-menu navbar">
-          <ul>
-            <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-            <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-            <li><a href="#arts" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Arts</span></a></li>
-            <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
-            <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+          <!-- Right: Menü -->
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a href="#hero"     class="nav-link scrollto active" data-bs-toggle="collapse" data-bs-target="#navbarMain"> <i class="bx bx-home"></i> <span>Start</span></a></li>
+            <li class="nav-item"><a href="#resume"   class="nav-link scrollto" data-bs-toggle="collapse" data-bs-target="#navbarMain">Resume</a></li>
+            <li class="nav-item"><a href="#projects" class="nav-link scrollto" data-bs-toggle="collapse" data-bs-target="#navbarMain">Projects</a></li>
+            <li class="nav-item"><a href="#arts"     class="nav-link scrollto" data-bs-toggle="collapse" data-bs-target="#navbarMain">Arts</a></li>
+            <li class="nav-item"><a href="#music"    class="nav-link scrollto" data-bs-toggle="collapse" data-bs-target="#navbarMain">Music</a></li>
+            <li class="nav-item"><a href="#contact"  class="nav-link scrollto" data-bs-toggle="collapse" data-bs-target="#navbarMain">Contact</a></li>
           </ul>
-        </nav--><!-- .nav-menu -->
-    <!--/div>
-  </header--><!-- End Header -->
+
+        </div>
+      </div>
+    </nav>
+
+
     <!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
@@ -185,7 +98,7 @@
       <div class="hero-container" data-aos="fade-in">
         <h1>Radmir Gesler</h1>
         <p> I'm
-          <span class="typed" 
+          <span class="typed"
                 data-typed-items="Mathematician, Developer, Artist, Musician">
           </span>
         </p>
@@ -201,127 +114,111 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="" />
+
+          <div class="col-lg-4 text-center" data-aos="fade-right">
+            <img src="assets/img/profile-img.jpg" class="img-fluid rounded-circle" alt="Profile picture" />
           </div>
+
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
             <!--h3>UI/UX Designer &amp; Web Developer.</h3-->
             <p>
-              Hello I'm Radmir, ...
+              My name is Radmir,
             </br>
-            
-              Officiis eligendi itaque labore et dolorum mollitia officiis
-              optio vero. Quisquam sunt adipisci omnis et ut. Nulla
-              accusantium dolor incidunt officia tempore. Et eius omnis.
-              Cupiditate ut dicta maxime officiis quidem quia. Sed et
-              consectetur qui quia repellendus itaque neque. Aliquid amet
-              quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis
-              culpa magni laudantium dolores.
+            </br>
+              What sets me apart is that I focus first on understanding and the structure and the context of a given problem.
+              In my view, what matters most is the ability to analyze a challenge, design the right approach,
+              and implement a solution by iterating it over and over.
+            </br>
+            </br>
+              Along the way, I learn and apply the necessary technologies
+              — whether it’s Python, C++, C#, Java or backend systems — as tools to reach the solution.
+              I don’t aim to “perfectly master” every programming language or framework.
+
             </p>
           </div>
         </div>
       </div>
 
       <div class="container">
-        <div class="section-title">
-          <h2> </h2>
-          <p>
-            Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-            ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-            quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-            Quia fugiat sit in iste officiis commodi quidem hic quas.
-          </p>
-        </div>
 
         <div class="row">
           <div class="col-lg-6" data-aos="fade-up">
-            <h3 class="resume-title">Sumary</h3>
-            <div class="resume-item pb-0">
-              <h4>Alex Smith</h4>
-              <p>
-                <em
-                  >Innovative and deadline-driven Graphic Designer with 3+
-                  years of experience designing and developing user-centered
-                  digital/print marketing material from initial concept to
-                  final, polished deliverable.</em
-                >
-              </p>
-              <ul>
-                <li>Portland par 127,Orlando, FL</li>
-                <li>(123) 456-7891</li>
-                <li>alice.barkley@example.com</li>
-              </ul>
-            </div>
 
             <h3 class="resume-title">Education</h3>
             <div class="resume-item">
-              <h4>Master of Fine Arts &amp; Graphic Design</h4>
-              <h5>2015 - 2016</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>
-                Qui deserunt veniam. Et sed aliquam labore tempore sed
-                quisquam iusto autem sit. Ea vero voluptatum qui ut
-                dignissimos deleniti nerada porti sand markend
-              </p>
+              <h4>Master of Engineering, Technische Informatik</h4>
+              <h5>2022 - 2025</h5>
+              <p><em>Berliner Hochschule für Technik (BHT)</em></p>
             </div>
             <div class="resume-item">
-              <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-              <h5>2010 - 2014</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>
-                Quia nobis sequi est occaecati aut. Repudiandae et iusto quae
-                reiciendis et quis Eius vel ratione eius unde vitae rerum
-                voluptates asperiores voluptatem Earum molestiae consequatur
-                neque etlon sader mart dila
-              </p>
+              <h4>Bchelor of Science, Mathematik</h4>
+              <h5>2015 - 2019</h5>
+              <p><em>Berliner Hochschule für Technik (BHT)</em></p>
             </div>
           </div>
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <h3 class="resume-title">Professional Experience</h3>
             <div class="resume-item">
-              <h4>Senior graphic design specialist</h4>
-              <h5>2019 - Present</h5>
-              <p><em>Experion, New York, NY </em></p>
+              <h4>Software Developer</h4>
+              <h5>March 2025 - Present</h5>
+              <p><em>Berliner Hochschule für Technik (BHT)</em></p>
               <ul>
                 <li>
-                  Lead in the design, development, and implementation of the
-                  graphic, layout, and production communication materials
-                </li>
+                  Development of a schema-agnostic IFC processing library in Python (for
+                  prototyping) and C++, leveraging IfcOpenShell, the OpenCascade (OCC)
+                  framework, and Open3D.
                 <li>
-                  Delegate tasks to the 7 members of the design team and
-                  provide counsel on all aspects of the project.
-                </li>
+                  The library is designed to provide a nested data structure capable of handling
+                  internal room meshes extracted from IFC files. These meshes capture all
+                  relevant geometrical details.
                 <li>
-                  Supervise the assessment of all graphic materials in order
-                  to ensure quality and accuracy of the design
-                </li>
-                <li>
-                  Oversee the efficient use of production project budgets
-                  ranging from $2,000 - $25,000
-                </li>
+                  In te second step a Docker container should be prepared to use the implemented library
+                  on a backend. The container delivers the extradited geometrical data from IFC files
+                  to do a comparison to a point cloud.
               </ul>
             </div>
             <div class="resume-item">
-              <h4>Graphic design specialist</h4>
-              <h5>2017 - 2018</h5>
-              <p><em>Stepping Stone Advertising, New York, NY</em></p>
+              <h4>Software Developer</h4>
+              <h5>August 2024 - February 2025</h5>
+              <p><em>Berliner Hochschule für Technik (BHT)</em></p>
               <ul>
                 <li>
-                  Developed numerous marketing programs (logos,
-                  brochures,infographics, presentations, and advertisements).
-                </li>
+                  Development of a base Augmented Reality (AR) application in Unity (C#),
+                  accompanied by an application server for hosting a PostgreSQL database and
+                  a dedicated API.
                 <li>
-                  Managed up to 5 projects or tasks at a given time while
-                  under pressure
-                </li>
+                  The server infrastructure is orchestrated with Docker Compose and is
+                  composed of four containers: An Nginx web server, a PostgreSQL database, a
+                  C# Web API for database access, pgAdmin for database administration.
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Software Developer</h4>
+              <h5>October 2023 - Juli 2024</h5>
+              <p><em>Berliner Hochschule für Technik (BHT)</em></p>
+              <ul>
                 <li>
-                  Recommended and consulted with clients on the most
-                  appropriate graphic design
-                </li>
+                  Development of a C++ library/API built on the OpenCascade (OCC)
+                  framework, with integration into a Unity application implemented in C#.
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Software Developer</h4>
+              <h5>January 2023 - September 2023</h5>
+              <p><em>Siemens Mobility GmbH</em></p>
+              <ul>
                 <li>
-                  Created 4+ design presentations and proposals a month for
-                  clients and account managers
-                </li>
+                  Development of a Python-Test-Pipeline for testing of hardware and software.
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Software Developer</h4>
+              <h5>January 2020 - December 2022</h5>
+              <p><em>AWEK Microdata GmbH / Zucchetti Germany GmbH</em></p>
+              <ul>
+                <li>
+                  Fullstack-Development based on JEE 8, API development for Third-Party-Components with
+                  Java SE.
               </ul>
             </div>
           </div>
@@ -330,122 +227,19 @@
     </section>
     <!-- ===== End Resume Section ===== -->
 
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
+    <!-- ======= Projects Section ======= >
+    <section id="projects" class="portfolio section-bg">
       <div class="container">
         <div class="section-title">
-          <h2>Skills</h2>
+          <h2>Projects</h2>
           <p>
-            Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-            ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-            quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-            Quia fugiat sit in iste officiis commodi quidem hic quas.
-          </p>
-        </div>
-
-        <div class="row skills-content">
-          <div class="col-lg-6" data-aos="fade-up">
-            <div class="progress">
-              <span class="skill">HTML <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  aria-valuenow="100"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">CSS <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  aria-valuenow="90"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">JavaScript <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  aria-valuenow="75"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="progress">
-              <span class="skill">PHP <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  aria-valuenow="80"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">WordPress/CMS <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  aria-valuenow="90"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Photoshop <i class="val">55%</i></span>
-              <div class="progress-bar-wrap">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  aria-valuenow="55"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Skills Section -->
-
-    <!-- ======= Arts Section ======= -->
-    <section id="arts" class="portfolio section-bg">
-      <div class="container">
-        <div class="section-title">
-          <h2>Arts</h2>
-          <p>
-            Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-            ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-            quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-            Quia fugiat sit in iste officiis commodi quidem hic quas.
+            Some projects intro ...
           </p>
         </div>
 
         <div class="row" data-aos="fade-up">
           <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
+            <ul id="project-filter">
               <li data-filter="*" class="filter-active">Paintings</li>
               <li data-filter=".filter-app">Drawings</li>
               <li data-filter=".filter-card">Graphics</li>
@@ -653,6 +447,300 @@
                   ><i class="bx bx-link"></i
                 ></a>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    < ===== End Projects Section ===== -->
+
+    <!-- ======= Projects Section (Table) ======= -->
+    <section id="projects" class="section-bg py-5">
+      <div class="container">
+        <div class="section-title mb-4 text-center">
+          <h2>Projects</h2>
+          <p class="text-muted">A compact overview of selected work.</p>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table table-striped align-middle">
+            <thead class="table-light">
+            <tr>
+              <th scope="col" style="width:28%">Name</th>
+              <th scope="col">Description</th>
+              <th scope="col" style="width:12%">Link</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <th scope="row">Inverse Heat Conduction with PINNs</th>
+              <td>
+                Estimating spatially variable thermal diffusivity <code>a(x,y)</code> from observations using
+                Physics-Informed Neural Networks (TensorFlow/DeepXDE). Includes smoothness regularization and
+                two-stage training.
+              </td>
+              <td>
+                <a class="btn btn-sm btn-outline-primary" href="https://github.com/RadmirG/Master-Arbeit"
+                   target="_blank" rel="noopener">Repo</a>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">IFC Geometry Processing Library</th>
+              <td>
+                Schema-agnostic IFC parser & converter (C++/IfcOpenShell/OpenCascade/Open3D) producing lightweight,
+                web-ready geometry (e.g., glTF) with nested data structures for room meshes.
+              </td>
+              <td>
+                <a class="btn btn-sm btn-outline-secondary disabled" href="#" target="_blank" rel="noopener">Soon</a>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Unity AR App for Room Meshes</th>
+              <td>
+                Mobile AR (Unity/C#) to place & visualize internal room geometries. Backend via Docker Compose
+                (Nginx, PostgreSQL, C# Web API, pgAdmin) with JWT authentication.
+              </td>
+              <td>
+                <a class="btn btn-sm btn-outline-secondary disabled" href="#" target="_blank" rel="noopener">Soon</a>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Audio: Embedded Sampler Prototype</th>
+              <td>
+                Standalone music workstation prototype on Raspberry Pi 5 (touch UI, low-latency audio, hardware I/O),
+                exploring alternatives to classic MPC workflows.
+              </td>
+              <td>
+                <a class="btn btn-sm btn-outline-secondary disabled" aria-disabled="true">Soon</a>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </section>
+    <!-- ===== End Projects Section (Table) ===== -->
+
+
+    <!-- ======= Arts Section ======= -->
+    <section id="arts" class="portfolio section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>Arts</h2>
+          <p class="text-muted">Coming soon.</p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">Paintings</li>
+              <li data-filter=".filter-app">Drawings</li>
+              <li data-filter=".filter-card">Graphics</li>
+            </ul>
+          </div>
+        </div>
+
+        <!--div
+                class="row portfolio-container"
+                data-aos="fade-up"
+                data-aos-delay="100"
+        >
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img
+                      src="assets/img/portfolio/portfolio-1.jpg"
+                      class="img-fluid"
+                      alt=""
+              />
+              <div class="portfolio-links">
+                <a
+                        href="assets/img/portfolio/portfolio-1.jpg"
+                        data-gallery="portfolioGallery"
+                        class="portfolio-lightbox"
+                        title="App 1"
+                ><i class="bx bx-plus"></i
+                ></a>
+                <a href="portfolio-details.html" title="More Details"
+                ><i class="bx bx-link"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img
+                      src="assets/img/portfolio/portfolio-2.jpg"
+                      class="img-fluid"
+                      alt=""
+              />
+              <div class="portfolio-links">
+                <a
+                        href="assets/img/portfolio/portfolio-2.jpg"
+                        data-gallery="portfolioGallery"
+                        class="portfolio-lightbox"
+                        title="Web 3"
+                ><i class="bx bx-plus"></i
+                ></a>
+                <a href="portfolio-details.html" title="More Details"
+                ><i class="bx bx-link"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img
+                      src="assets/img/portfolio/portfolio-3.jpg"
+                      class="img-fluid"
+                      alt=""
+              />
+              <div class="portfolio-links">
+                <a
+                        href="assets/img/portfolio/portfolio-3.jpg"
+                        data-gallery="portfolioGallery"
+                        class="portfolio-lightbox"
+                        title="App 2"
+                ><i class="bx bx-plus"></i
+                ></a>
+                <a href="portfolio-details.html" title="More Details"
+                ><i class="bx bx-link"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img
+                      src="assets/img/portfolio/portfolio-4.jpg"
+                      class="img-fluid"
+                      alt=""
+              />
+              <div class="portfolio-links">
+                <a
+                        href="assets/img/portfolio/portfolio-4.jpg"
+                        data-gallery="portfolioGallery"
+                        class="portfolio-lightbox"
+                        title="Card 2"
+                ><i class="bx bx-plus"></i
+                ></a>
+                <a href="portfolio-details.html" title="More Details"
+                ><i class="bx bx-link"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img
+                      src="assets/img/portfolio/portfolio-5.jpg"
+                      class="img-fluid"
+                      alt=""
+              />
+              <div class="portfolio-links">
+                <a
+                        href="assets/img/portfolio/portfolio-5.jpg"
+                        data-gallery="portfolioGallery"
+                        class="portfolio-lightbox"
+                        title="Web 2"
+                ><i class="bx bx-plus"></i
+                ></a>
+                <a href="portfolio-details.html" title="More Details"
+                ><i class="bx bx-link"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img
+                      src="assets/img/portfolio/portfolio-6.jpg"
+                      class="img-fluid"
+                      alt=""
+              />
+              <div class="portfolio-links">
+                <a
+                        href="assets/img/portfolio/portfolio-6.jpg"
+                        data-gallery="portfolioGallery"
+                        class="portfolio-lightbox"
+                        title="App 3"
+                ><i class="bx bx-plus"></i
+                ></a>
+                <a href="portfolio-details.html" title="More Details"
+                ><i class="bx bx-link"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img
+                      src="assets/img/portfolio/portfolio-7.jpg"
+                      class="img-fluid"
+                      alt=""
+              />
+              <div class="portfolio-links">
+                <a
+                        href="assets/img/portfolio/portfolio-7.jpg"
+                        data-gallery="portfolioGallery"
+                        class="portfolio-lightbox"
+                        title="Card 1"
+                ><i class="bx bx-plus"></i
+                ></a>
+                <a href="portfolio-details.html" title="More Details"
+                ><i class="bx bx-link"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img
+                      src="assets/img/portfolio/portfolio-8.jpg"
+                      class="img-fluid"
+                      alt=""
+              />
+              <div class="portfolio-links">
+                <a
+                        href="assets/img/portfolio/portfolio-8.jpg"
+                        data-gallery="portfolioGallery"
+                        class="portfolio-lightbox"
+                        title="Card 3"
+                ><i class="bx bx-plus"></i
+                ></a>
+                <a href="portfolio-details.html" title="More Details"
+                ><i class="bx bx-link"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img
+                      src="assets/img/portfolio/portfolio-9.jpg"
+                      class="img-fluid"
+                      alt=""
+              />
+              <div class="portfolio-links">
+                <a
+                        href="assets/img/portfolio/portfolio-9.jpg"
+                        data-gallery="portfolioGallery"
+                        class="portfolio-lightbox"
+                        title="Web 3"
+                ><i class="bx bx-plus"></i
+                ></a>
+                <a href="portfolio-details.html" title="More Details"
+                ><i class="bx bx-link"></i
+                ></a>
+              </div-->
             </div>
           </div>
         </div>
@@ -665,9 +753,7 @@
       <div class="container">
         <div class="section-title">
           <h2>Music</h2>
-          <p>
-            Something about music ...
-          </p>
+          <p class="text-muted">Coming soon.</p>
         </div>
 
         <div class="row">
@@ -676,312 +762,57 @@
             <source src="assets/audio/test_1.mp3" type="audio/mpeg">
           </audio>
 
-          
+
         </div>
       </div>
     </section>
     <!-- ===== End Music Section ===== -->
-
-    <!-- ======= Projects Section ======= -->
-    <section id="projects" class="portfolio section-bg">
-      <div class="container">
-        <div class="section-title">
-          <h2>Projects</h2>
-          <p>
-            Some projects intro ...
-          </p>
-        </div>
-
-        <div class="row" data-aos="fade-up">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">Paintings</li>
-              <li data-filter=".filter-app">Drawings</li>
-              <li data-filter=".filter-card">Graphics</li>
-            </ul>
-          </div>
-        </div>
-
-        <div
-          class="row portfolio-container"
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img
-                src="assets/img/portfolio/portfolio-1.jpg"
-                class="img-fluid"
-                alt=""
-              />
-              <div class="portfolio-links">
-                <a
-                  href="assets/img/portfolio/portfolio-1.jpg"
-                  data-gallery="portfolioGallery"
-                  class="portfolio-lightbox"
-                  title="App 1"
-                  ><i class="bx bx-plus"></i
-                ></a>
-                <a href="portfolio-details.html" title="More Details"
-                  ><i class="bx bx-link"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img
-                src="assets/img/portfolio/portfolio-2.jpg"
-                class="img-fluid"
-                alt=""
-              />
-              <div class="portfolio-links">
-                <a
-                  href="assets/img/portfolio/portfolio-2.jpg"
-                  data-gallery="portfolioGallery"
-                  class="portfolio-lightbox"
-                  title="Web 3"
-                  ><i class="bx bx-plus"></i
-                ></a>
-                <a href="portfolio-details.html" title="More Details"
-                  ><i class="bx bx-link"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img
-                src="assets/img/portfolio/portfolio-3.jpg"
-                class="img-fluid"
-                alt=""
-              />
-              <div class="portfolio-links">
-                <a
-                  href="assets/img/portfolio/portfolio-3.jpg"
-                  data-gallery="portfolioGallery"
-                  class="portfolio-lightbox"
-                  title="App 2"
-                  ><i class="bx bx-plus"></i
-                ></a>
-                <a href="portfolio-details.html" title="More Details"
-                  ><i class="bx bx-link"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img
-                src="assets/img/portfolio/portfolio-4.jpg"
-                class="img-fluid"
-                alt=""
-              />
-              <div class="portfolio-links">
-                <a
-                  href="assets/img/portfolio/portfolio-4.jpg"
-                  data-gallery="portfolioGallery"
-                  class="portfolio-lightbox"
-                  title="Card 2"
-                  ><i class="bx bx-plus"></i
-                ></a>
-                <a href="portfolio-details.html" title="More Details"
-                  ><i class="bx bx-link"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img
-                src="assets/img/portfolio/portfolio-5.jpg"
-                class="img-fluid"
-                alt=""
-              />
-              <div class="portfolio-links">
-                <a
-                  href="assets/img/portfolio/portfolio-5.jpg"
-                  data-gallery="portfolioGallery"
-                  class="portfolio-lightbox"
-                  title="Web 2"
-                  ><i class="bx bx-plus"></i
-                ></a>
-                <a href="portfolio-details.html" title="More Details"
-                  ><i class="bx bx-link"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img
-                src="assets/img/portfolio/portfolio-6.jpg"
-                class="img-fluid"
-                alt=""
-              />
-              <div class="portfolio-links">
-                <a
-                  href="assets/img/portfolio/portfolio-6.jpg"
-                  data-gallery="portfolioGallery"
-                  class="portfolio-lightbox"
-                  title="App 3"
-                  ><i class="bx bx-plus"></i
-                ></a>
-                <a href="portfolio-details.html" title="More Details"
-                  ><i class="bx bx-link"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img
-                src="assets/img/portfolio/portfolio-7.jpg"
-                class="img-fluid"
-                alt=""
-              />
-              <div class="portfolio-links">
-                <a
-                  href="assets/img/portfolio/portfolio-7.jpg"
-                  data-gallery="portfolioGallery"
-                  class="portfolio-lightbox"
-                  title="Card 1"
-                  ><i class="bx bx-plus"></i
-                ></a>
-                <a href="portfolio-details.html" title="More Details"
-                  ><i class="bx bx-link"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img
-                src="assets/img/portfolio/portfolio-8.jpg"
-                class="img-fluid"
-                alt=""
-              />
-              <div class="portfolio-links">
-                <a
-                  href="assets/img/portfolio/portfolio-8.jpg"
-                  data-gallery="portfolioGallery"
-                  class="portfolio-lightbox"
-                  title="Card 3"
-                  ><i class="bx bx-plus"></i
-                ></a>
-                <a href="portfolio-details.html" title="More Details"
-                  ><i class="bx bx-link"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img
-                src="assets/img/portfolio/portfolio-9.jpg"
-                class="img-fluid"
-                alt=""
-              />
-              <div class="portfolio-links">
-                <a
-                  href="assets/img/portfolio/portfolio-9.jpg"
-                  data-gallery="portfolioGallery"
-                  class="portfolio-lightbox"
-                  title="Web 3"
-                  ><i class="bx bx-plus"></i
-                ></a>
-                <a href="portfolio-details.html" title="More Details"
-                  ><i class="bx bx-link"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ===== End Projects Section ===== -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container">
         <div class="section-title">
           <h2>Contact</h2>
-          <p>
+          <!--p>
             Magnam dolores commodi suscipit. Necessitatibus eius consequatur
             ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
             quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
             Quia fugiat sit in iste officiis commodi quidem hic quas.
-          </p>
+          </p-->
         </div>
 
         <div class="row" data-aos="fade-in">
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form
-              action="forms/contact.php"
-              method="post"
-              role="form"
-              class="php-email-form"
-            >
+            <form id="contactForm" action="https://formspree.io/f/xandpygg" method="POST"
+                  class="php-email-form">
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
-                  <input
-                    type="text"
-                    name="name"
-                    class="form-control"
-                    id="name"
-                    required
-                  />
+                  <input type="text" name="name" class="form-control" id="name" required />
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    name="email"
-                    id="email"
-                    required
-                  />
+                  <label for="email">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required />
                 </div>
               </div>
               <div class="form-group">
-                <label for="name">Subject</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  name="subject"
-                  id="subject"
-                  required
-                />
+                <label for="subject">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required />
               </div>
               <div class="form-group">
-                <label for="name">Message</label>
-                <textarea
-                  class="form-control"
-                  name="message"
-                  rows="10"
-                  required
-                ></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">
-                  Your message has been sent. Thank you!
-                </div>
+                <label for="message">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
               </div>
               <div class="text-center">
                 <button type="submit">Send Message</button>
               </div>
             </form>
+            <div class="my-3">
+              <div class="loading" style="display:none;">Loading</div>
+              <div class="error-message" style="display:none;color:#dc3545;"></div>
+              <div class="sent-message" style="display:none;color:#28a745;">Your message has been sent. Thank you!</div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -995,18 +826,76 @@
       ><i class="bi bi-arrow-up-short"></i
     ></a>
 
-    <!-- Vendor JS Files -->
+    <!-- ======= JS: Reihenfolge wichtig ======= -->
+    <!-- Bootstrap 5 Bundle (mit Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+    <!-- Vendor JS Files (ohne Bootstrap, sonst doppelt) -->
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/typed.js/typed.min.js"></script>
-    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <!-- Entfernt: <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+    <!-- Entfernt: <script src="assets/vendor/php-email-form/validate.js"></script> -->
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+
+    <!-- Kontakt: Formspree-Handler & Navbar-Autoclose -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        // ===== Formspree =====
+        const form = document.getElementById('contactForm');
+        const loading = form.querySelector('.loading');
+        const errorBox = form.querySelector('.error-message');
+        const okBox = form.querySelector('.sent-message');
+
+        form.addEventListener('submit', async (e) => {
+          e.preventDefault();
+          if (loading) loading.style.display = 'block';
+          if (errorBox) errorBox.style.display = 'none';
+          if (okBox) okBox.style.display = 'none';
+
+          try {
+            const resp = await fetch(form.action, {
+              method: 'POST',
+              body: new FormData(form),
+              headers: { 'Accept': 'application/json' }
+            });
+            if (loading) loading.style.display = 'none';
+            if (resp.ok) {
+              if (okBox) okBox.style.display = 'block';
+              form.reset();
+            } else {
+              const data = await resp.json().catch(()=> ({}));
+              if (errorBox) {
+                errorBox.textContent = data.errors?.map(e=>e.message).join(', ') || 'Sending failed.';
+                errorBox.style.display = 'block';
+              }
+            }
+          } catch (err) {
+            if (loading) loading.style.display = 'none';
+            if (errorBox) {
+              errorBox.textContent = 'Network error. Please try again.';
+              errorBox.style.display = 'block';
+            }
+          }
+        });
+
+        // ===== Navbar: nach Klick einklappen (Fallback, falls scroll-Skript eingreift) =====
+        const nav = document.getElementById('navbarMain');
+        const toggler = document.querySelector('.navbar-toggler');
+        document.querySelectorAll('#navbarMain .nav-link').forEach(link => {
+          link.addEventListener('click', () => {
+            const isMobile = window.getComputedStyle(toggler).display !== 'none';
+            if (!nav || !isMobile) return;
+            const bs = bootstrap.Collapse.getOrCreateInstance(nav, { toggle: false });
+            bs.hide();
+          });
+        });
+      });
+    </script>
   </body>
 </html>
